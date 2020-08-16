@@ -9,8 +9,8 @@
         class="absolute h-full w-full object-cover"
       />
       <div class="overlay"></div>
-      <div class="absolute top-32 left-32 text-white">
-        <NuxtLink to="/"><Logo /></NuxtLink>
+      <div class="absolute top-32 left-32">
+        <NuxtLink to="/"><Logo class="mt-3" /></NuxtLink>
         <div class="mt-16 -mb-3 flex uppercase text-sm">
           <p class="mr-3">
             {{ formatDate(article.updatedAt) }}
@@ -21,20 +21,11 @@
         <h1 class="text-6xl font-bold">{{ article.title }}</h1>
       </div>
       <div class="flex absolute top-3rem right-3rem">
-        <NuxtLink
-          to="/"
-          class="mr-8 self-center text-white font-bold hover:underline"
-        >
+        <NuxtLink to="/" class="mr-8 self-center font-bold hover:underline">
           All articles
         </NuxtLink>
-        <a
-          href="https://nuxtjs.org/blog/creating-blog-with-nuxt-content"
-          class="mr-8 self-center text-white font-bold hover:underline"
-        >
-          Tutorial
-        </a>
         <AppSearchInput />
-        <ColorMode />
+        <ColorMode class="ml-6 mt-2 h-6 w-6" />
       </div>
     </div>
     <div

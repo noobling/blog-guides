@@ -9,7 +9,7 @@
     />
     <ul
       v-if="articles.length"
-      class="z-10 absolute w-auto flex-1 top-40 bg-white dark:bg-gray-900 rounded-md border border-gray-300 overflow-hidden"
+      class="z-10 absolute w-auto flex-1 top-40 bg-white rounded-md border border-gray-300 overflow-hidden"
     >
       <li v-for="article of articles" :key="article.slug">
         <NuxtLink
