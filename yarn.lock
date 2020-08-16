@@ -1602,7 +1602,7 @@
     webpack-node-externals "^2.5.0"
     webpackbar "^4.0.0"
 
-"@nuxtjs/color-mode@^1.0.3":
+"@nuxtjs/color-mode@1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@nuxtjs/color-mode/-/color-mode-1.0.3.tgz#213d9e757f354cb7db1efe9702d54789e95d6dae"
   integrity sha512-fTmjn9fzFv/LPYPJc6m/AxTSPrkoNrgZncLRxVoG3vfhBcHc3D5bFmKvxOLk4ailR+YlxHgIXQp7YK5lf6sYog==
@@ -1640,7 +1640,7 @@
     consola "^2.12.1"
     stylelint-webpack-plugin "^2.0.0"
 
-"@nuxtjs/svg@^0.1.11":
+"@nuxtjs/svg@0.1.11":
   version "0.1.11"
   resolved "https://registry.yarnpkg.com/@nuxtjs/svg/-/svg-0.1.11.tgz#6a6ddfd507003ccc003f3f12b9b95868b59550f4"
   integrity sha512-XZ0tTl+cFWi99fe8hZDN83bSoEpUhmoJxvDV72s/2qcPTDl2R5eOBTpy1gcsIc24DW5ZREc1UCH8KyC1sv7Rzw==
@@ -9759,7 +9759,7 @@ table@^5.2.3, table@^5.4.6:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
-tailwindcss-dark-mode@^1.1.6:
+tailwindcss-dark-mode@1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/tailwindcss-dark-mode/-/tailwindcss-dark-mode-1.1.6.tgz#b9a7980e7a3a5f10050857232f3f6c6c6c605724"
   integrity sha512-3+pd3DqMr0ukOfhz5FTtvrZXCph1QreTMV64HDAjSOuJC1jgnpx+JosoQK6cYACFgwNcSpaSJY0tuQRiiF8Ffg==
