@@ -144,4 +144,4 @@ I hope you all have fun doing the project. Software is hard so don't feel bad if
 Cheers,<br>
 David :)
 
-![frontend roadmap](../../static/articles/intro-to-cfc-projects/roadmap.png)
+![frontend roadmap](../assets/roadmap.png)
