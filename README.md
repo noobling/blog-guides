@@ -1,4 +1,4 @@
-# cfc-blog-guides
+# blog-guides
 
 ## Build Setup
 
