@@ -13,7 +13,7 @@
     "lint": "yarn lint:js && yarn lint:style"
   },
   "dependencies": {
-    "@nuxt/content": "1.6.0",
+    "@nuxt/content": "1.6.1",
     "nuxt": "2.14.3",
     "prism-themes": "1.4.0"
   },
