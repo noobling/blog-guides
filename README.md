@@ -1,7 +1,5 @@
 # blog-guides
 
-Site link : https://determined-euclid-93ace2.netlify.app/
-
 ## Build Setup
 
 ```bash
