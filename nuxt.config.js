@@ -82,6 +82,6 @@ export default {
     exposeConfig: true
   },
   purgeCSS: {
-    whitelist: ['dark-mode']
+    whitelist: ['light-mode', 'dark-mode']
   }
 }
