@@ -76,5 +76,12 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {}
+  build: {},
+  tailwindcss: {
+    // add '~tailwind.config` alias
+    exposeConfig: true
+  },
+  purgeCSS: {
+    whitelist: ['dark-mode']
+  }
 }

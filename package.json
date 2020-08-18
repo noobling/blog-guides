@@ -15,15 +15,16 @@
   "dependencies": {
     "@nuxt/content": "1.6.0",
     "nuxt": "2.14.3",
-    "prism-themes": "1.4.0"
+    "@nuxtjs/color-mode": "1.0.3",
+    "@nuxtjs/tailwindcss": "3.0.0",
+    "prism-themes": "1.4.0",
+    "tailwindcss-dark-mode": "1.1.6"
   },
   "devDependencies": {
-    "@nuxtjs/color-mode": "1.0.3",
     "@nuxtjs/eslint-config": "3.1.0",
     "@nuxtjs/eslint-module": "2.0.0",
     "@nuxtjs/stylelint-module": "4.0.0",
     "@nuxtjs/svg": "0.1.11",
-    "@nuxtjs/tailwindcss": "3.0.0",
     "babel-eslint": "10.1.0",
     "eslint": "7.7.0",
     "eslint-config-prettier": "6.11.0",
@@ -32,7 +33,6 @@
     "prettier": "2.0.5",
     "stylelint": "13.6.1",
     "stylelint-config-prettier": "8.0.2",
-    "stylelint-config-standard": "20.0.0",
-    "tailwindcss-dark-mode": "1.1.6"
+    "stylelint-config-standard": "20.0.0"
   }
 }
