@@ -2,10 +2,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.container {
-  @apply px-4;
-}
-
 .nuxt-content-highlight {
   @apply relative;
 }
@@ -30,7 +26,7 @@
 .nuxt-content h4,
 .nuxt-content h5,
 .nuxt-content h6 {
-  @apply font-mono font-bold;
+  @apply font-mono font-bold overflow-x-scroll;
 }
 .nuxt-content h1 {
   font-size: 34px;

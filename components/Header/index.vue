@@ -3,11 +3,11 @@
     class="header z-20"
     :class="{ 'fixed top-0': $nuxt.$route.name === 'index' }"
   >
-    <div class="container mx-auto flex justify-between items-center">
+    <div class="sm:container sm:mx-auto px-4 flex justify-between items-center">
       <NuxtLink to="/">
         <button class="logo">cfc</button>
       </NuxtLink>
-      <div class="flex justify-between items-center">
+      <div class="hidden sm:flex justify-between items-center">
         <button class="flex justify-between items-center p-2">
           <i class="material-icons-sharp">nights_stay</i>
         </button>

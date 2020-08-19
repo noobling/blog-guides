@@ -1,5 +1,5 @@
 <template>
-  <main class="container mx-auto mb-8 mt-16">
+  <main class="sm:container sm:mx-auto px-4 mb-8 mt-16">
     <h1 class="font-bold font-mono text-4xl mb-6">Blog Posts</h1>
     <ul class="grid">
       <li

@@ -1,5 +1,5 @@
 <template>
-  <article class="w-screen">
+  <article class="w-screen mb-8">
     <div v-show="article.img" class="relative w-screen h-96">
       <img
         :src="article.img"
@@ -7,15 +7,24 @@
         class="absolute h-full w-full object-cover"
       />
     </div>
-    <div class="container relative mx-auto mt-12 blog-grid">
-      <div class="markdown-body post-right custom-scroll">
-        <h1 class="font-mono text-5xl mb-4">{{ article.title }}</h1>
+    <div class="sm:container sm:mx-auto px-4 relative mt-12 blog-grid">
+      <div>
+        <h1 class="font-mono overflow-x-hidden text-4xl md:text-5xl mb-4">
+          {{ article.title }}
+        </h1>
+        <span class="md:hidden">
+          <p class="mb-0">by {{ article.author.name }}</p>
+          <!-- <p class="mb-1">{{ article.description }}</p> -->
+          <p class="mb-4">
+            <small>Last Updated: {{ formatDate(article.updatedAt) }}</small>
+          </p>
+        </span>
         <!-- content from markdown -->
         <nuxt-content :document="article" />
         <!-- prevNext component -->
         <PrevNext :prev="prev" :next="next" class="mt-8" />
       </div>
-      <div class="static top-0">
+      <div class="static top-0 hidden md:block">
         <p class="mb-1">{{ article.description }}</p>
         <p class="mb-4">
           <small>Last Updated: {{ formatDate(article.updatedAt) }}</small>
@@ -74,9 +83,15 @@ export default {
 <style scoped>
 .blog-grid {
   display: grid;
-  grid-template-columns: 1fr 18rem;
+  grid-template-columns: 1fr;
   grid-gap: 2rem;
 }
+@media (min-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr 18rem;
+  }
+}
+
 .list-square {
   list-style-type: square;
 }
