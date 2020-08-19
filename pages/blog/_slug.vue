@@ -15,33 +15,35 @@
         <!-- prevNext component -->
         <PrevNext :prev="prev" :next="next" class="mt-8" />
       </div>
-      <div class="sticky top-0">
+      <div class="static top-0">
         <p class="mb-1">{{ article.description }}</p>
         <p class="mb-4">
           <small>Last Updated: {{ formatDate(article.updatedAt) }}</small>
         </p>
         <!-- table of contents -->
-        <nav v-if="article.toc.length > 0" class="pb-6">
-          <small class="font-mono">Table of Contents</small>
-          <ul>
-            <li
-              v-for="link of article.toc"
-              :key="link.id"
-              class="list-inside"
-              :class="{
-                'font-semibold py-1 list-square': link.depth === 2,
-                'ml-2 pb-1 list-disc reduced-font': link.depth === 3
-              }"
-            >
-              <NuxtLink :to="`#${link.id}`" class="hover:underline">
-                {{ link.text }}
-              </NuxtLink>
-            </li>
-          </ul>
-        </nav>
+        <div class="sticky top-0 overflow-y-auto">
+          <nav v-if="article.toc.length > 0" class="mb-6 bg-primary">
+            <small class="font-mono">Table of Contents</small>
+            <ul>
+              <li
+                v-for="link of article.toc"
+                :key="link.id"
+                class="list-inside"
+                :class="{
+                  'font-semibold py-1 list-square': link.depth === 2,
+                  'ml-2 pb-1 list-disc reduced-font': link.depth === 3
+                }"
+              >
+                <NuxtLink :to="`#${link.id}`" class="hover:underline">
+                  {{ link.text }}
+                </NuxtLink>
+              </li>
+            </ul>
+          </nav>
 
-        <!-- content author component -->
-        <author :author="article.author" />
+          <!-- content author component -->
+          <author :author="article.author" />
+        </div>
       </div>
     </div>
   </article>

@@ -144,4 +144,4 @@ I hope you all have fun doing the project. Software is hard so don't feel bad if
 Cheers,<br>
 David :)
 
-<NuxtImage file="roadmap.png" alt="frontend roadmap" />
+<nuxt-image file="roadmap.png" alt="frontend roadmap" />
