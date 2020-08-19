@@ -14,7 +14,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Guides | Coders for Causes',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -24,7 +24,26 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com/',
+        crossOrigin: ''
+      },
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com/',
+        crossOrigin: ''
+      },
+      { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com/' },
+      { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com/' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|Material+Icons+Sharp&display=swap'
+      }
+    ]
   },
   /*
    ** Global CSS
@@ -50,8 +69,7 @@ export default {
     '@nuxtjs/stylelint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
-    '@nuxtjs/svg'
+    '@nuxtjs/color-mode'
   ],
   /*
    ** Nuxt.js modules
@@ -67,7 +85,7 @@ export default {
   content: {
     markdown: {
       prism: {
-        theme: 'prism-themes/themes/prism-material-oceanic.css'
+        theme: 'prism-themes/themes/prism-a11y-dark.css'
       }
     },
     nestedProperties: ['author.name']

@@ -1,13 +1,16 @@
 <template>
   <div>
+    <Header />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -16,12 +19,17 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+
+::selection {
+  @apply text-primary bg-accent;
+}
+
 .dark-mode {
-  @apply text-white bg-black;
+  @apply text-white bg-primary;
 }
 
 .light-mode {
-  @apply text-black-dark bg-white-light;
+  @apply text-primary bg-secondary;
 }
 
 *,

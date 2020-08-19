@@ -1,18 +1,9 @@
 <template>
-  <component
-    :is="`icon-dark`"
-    :class="getClasses('dark')"
-    @click="changeMode"
-  />
+  <div>hello</div>
 </template>
 
 <script>
-import IconDark from '@/assets/svg/dark-mode.svg?inline'
-
 export default {
-  components: {
-    IconDark
-  },
   computed: {
     btnLabel() {
       return this.$colorMode.preference === 'light' ? 'dark' : 'light'

@@ -1,13 +1,11 @@
 <template>
-  <div class="m-8">
-    <TheHeader />
-
-    <h1 class="font-bold text-4xl">Blog Posts</h1>
-    <ul class="flex flex-wrap">
+  <main class="container mx-auto mb-8 mt-16">
+    <h1 class="font-bold font-mono text-4xl mb-6">Blog Posts</h1>
+    <ul class="grid">
       <li
         v-for="article of articles"
         :key="article.slug"
-        class="xs:w-full md:w-1/2 px-2 xs:mb-6 md:mb-12 article-card"
+        class="w-full article-card"
       >
         <NuxtLink
           :to="{ name: 'blog-slug', params: { slug: article.slug } }"
@@ -31,15 +29,7 @@
         </NuxtLink>
       </li>
     </ul>
-    <footer class="flex justify-center border-gray-500 border-t-2">
-      <p class="mt-4">
-        Created by
-        <a href="https://codersforcauses.org/" class="font-bold hover:underline"
-          >CodersForCauses</a
-        >
-      </p>
-    </footer>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -56,7 +46,13 @@ export default {
 }
 </script>
 
-<style class="postcss">
+<style scoped class="postcss">
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 2rem;
+}
+
 .article-card {
   border-radius: 8px;
 }

@@ -28,7 +28,7 @@ If you want a closer look at the tools refer to this https://blog.codersforcause
 
 Check you installed the tools correctly
 
-```sh
+```bash
 npm -v
 node -v
 git --version
@@ -144,4 +144,4 @@ I hope you all have fun doing the project. Software is hard so don't feel bad if
 Cheers,<br>
 David :)
 
-![frontend roadmap](../assets/roadmap.png)
+![frontend roadmap](/content/roadmap.png)

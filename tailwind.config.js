@@ -9,16 +9,24 @@ module.exports = {
     darkSelector: '.dark-mode',
     screens: {
       xs: '320px',
-      sm: '640px',
+      sm: '576px',
       md: '768px',
-      lg: '1024px',
-      xl: '1280px',
+      lg: '992px',
+      xl: '1200px',
       xxlmin: '1351px',
       xxlmax: { max: '1350px' }
     },
     fontFamily: {
-      display: ['Quicksand', 'sans-serif'],
-      body: ['Quicksand', 'sans-serif']
+      mono: [
+        '"IBM Plex Mono"',
+        'SFMono-Regular',
+        'Menlo',
+        'Monaco',
+        'Consolas',
+        '"Liberation Mono"',
+        '"Courier New"',
+        'monospace'
+      ]
     },
     borderWidth: {
       default: '1px',
@@ -28,23 +36,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        cyan: '#9cdbff',
-        green: {
-          default: '#59981A',
-          yellow: '#ECF87F',
-          lime: '#81B622',
-          olive: '#3D550C'
-        },
-        black: {
-          default: '#212121',
-          dark: '#000000',
-          light: '#484848'
-        },
-        white: {
-          default: '#fafafa',
-          dark: '#c7c7c7',
-          light: '#ffffff'
-        }
+        primary: '#000000',
+        secondary: '#ffffff',
+        accent: '#01f1cc',
+        success: '#0070f3',
+        danger: '#ff0000',
+        warning: '#f5a623'
       },
       spacing: {
         '96': '24rem',
