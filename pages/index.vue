@@ -50,7 +50,7 @@ export default {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  grid-gap: 2rem;
+  grid-gap: 4rem;
 }
 
 .article-card {

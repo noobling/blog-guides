@@ -7,7 +7,9 @@
         class="absolute h-full w-full object-cover"
       />
     </div>
-    <div class="sm:container sm:mx-auto px-4 relative mt-12 blog-grid">
+    <div
+      class="sm:container sm:mx-auto px-4 relative mt-12 blog-grid gap-16 lg:gap-24"
+    >
       <div>
         <h1 class="font-mono overflow-x-hidden text-4xl md:text-5xl mb-4">
           {{ article.title }}
@@ -33,7 +35,7 @@
         <div class="sticky top-0 overflow-y-auto">
           <nav v-if="article.toc.length > 0" class="mb-6 bg-primary">
             <small class="font-mono">Table of Contents</small>
-            <ul>
+            <ul class="opacity-75">
               <li
                 v-for="link of article.toc"
                 :key="link.id"
@@ -84,7 +86,6 @@ export default {
 .blog-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 2rem;
 }
 @media (min-width: 768px) {
   .blog-grid {
