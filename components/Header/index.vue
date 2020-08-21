@@ -26,12 +26,10 @@
 
 <style scoped class="postcss">
 .logo {
-  font-size: 20px;
-  @apply font-mono font-bold;
+  @apply font-mono font-bold text-xl;
 }
 .header {
-  height: 64px;
-  @apply bg-primary w-full flex items-center py-4;
+  @apply bg-primary h-16 w-full flex items-center py-4;
 }
 .search {
   @apply h-full border-white text-primary px-4 py-2 ml-4;

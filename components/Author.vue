@@ -2,11 +2,11 @@
   <div class="w-full xs:mb-6 md:mb-12 article-card">
     <NuxtLink
       :to="`/blog/author/${author.name}`"
-      class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col dark:bg-black-dark"
+      class="flex flex-col dark:bg-black-dark"
     >
       <img
         v-if="author.img"
-        class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
+        class="h-48 w-full object-cover"
         :src="author.img"
       />
       <div class="flex flex-col m-4">

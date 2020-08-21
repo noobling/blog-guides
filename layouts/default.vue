@@ -29,7 +29,7 @@ html {
 }
 
 .light-mode {
-  @apply text-primary bg-secondary;
+  @apply text-black bg-secondary;
 }
 
 *,

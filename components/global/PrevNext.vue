@@ -5,7 +5,7 @@
       :to="{ name: 'blog-slug', params: { slug: prev.slug } }"
       class="font-bold hover:bg-gray-900 flex items-center p-2"
     >
-      <i class="material-icons-sharp w-4">chevron_left</i>
+      <i class="material-icons-sharp w-4 mr-2">chevron_left</i>
       &nbsp;{{ prev.title }}
     </NuxtLink>
     <span v-else>&nbsp;</span>
@@ -15,7 +15,7 @@
       class="font-bold hover:bg-gray-900 flex items-center p-2"
     >
       {{ next.title }}
-      <i class="material-icons-sharp w-4">chevron_right</i>
+      <i class="material-icons-sharp w-4 ml-2">chevron_right</i>
     </NuxtLink>
     <span v-else>&nbsp;</span>
   </div>
