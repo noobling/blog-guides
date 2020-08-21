@@ -4,9 +4,11 @@
     :class="{ 'fixed top-0': $nuxt.$route.name === 'index' }"
   >
     <div class="sm:container sm:mx-auto px-4 flex justify-between items-center">
-      <NuxtLink to="/">
-        <button class="logo">cfc</button>
-      </NuxtLink>
+      <client-only>
+        <NuxtLink to="/">
+          <button class="logo">cfc</button>
+        </NuxtLink>
+      </client-only>
       <div class="hidden sm:flex justify-between items-center">
         {{ $colorMode.preference }}
         {{ $colorMode.value }}
@@ -37,7 +39,7 @@ export default {
       }
       this.$colorMode.preference =
         this.$colorMode.preference === 'light' ? 'dark' : 'light'
-      console.log(this.$colorMode.preference)
+      console.error(this.$colorMode.preference)
     }
   }
 }
