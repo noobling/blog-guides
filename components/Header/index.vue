@@ -4,20 +4,20 @@
     :class="{ 'fixed top-0': $nuxt.$route.name === 'index' }"
   >
     <div class="sm:container sm:mx-auto px-4 flex justify-between items-center">
-      <client-only>
-        <NuxtLink to="/">
-          <button class="logo">cfc</button>
-        </NuxtLink>
-      </client-only>
+      <NuxtLink to="/">
+        <button class="logo">cfc</button>
+      </NuxtLink>
       <div class="hidden sm:flex justify-between items-center">
-        {{ $colorMode.preference }}
-        {{ $colorMode.value }}
-        <button
-          class="flex justify-between items-center p-2"
-          @click="changeTheme()"
-        >
-          <i class="material-icons-sharp">nights_stay</i>
-        </button>
+        <client-only>
+          {{ $colorMode.preference }}
+          {{ $colorMode.value }}
+          <button
+            class="flex justify-between items-center p-2"
+            @click="changeTheme()"
+          >
+            <i class="material-icons-sharp">nights_stay</i>
+          </button>
+        </client-only>
         <input
           type="search"
           name="search"
