@@ -8,5 +8,9 @@
         "generateStaticRoutes": true
       }
     }
+  ],
+  "routes": [
+    { "src": "/_nuxt/.+", "headers": { "Cache-Control": "max-age=31557600" } },
+    { "src": "/(.*)", "dest": "/" }
   ]
 }
