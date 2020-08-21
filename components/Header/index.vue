@@ -37,6 +37,7 @@ export default {
       }
       this.$colorMode.preference =
         this.$colorMode.preference === 'light' ? 'dark' : 'light'
+      console.log(this.$colorMode.preference)
     }
   }
 }
