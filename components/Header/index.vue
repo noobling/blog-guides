@@ -12,7 +12,10 @@
         {{ $colorMode.value }}
         <button
           class="flex justify-between items-center p-2"
-          @click="changeTheme()"
+          @click="
+            $colorMode.preference =
+              $colorMode.preference === 'light' ? 'dark' : 'light'
+          "
         >
           <i class="material-icons-sharp">nights_stay</i>
         </button>
@@ -27,21 +30,6 @@
     </div>
   </header>
 </template>
-
-<script>
-export default {
-  methods: {
-    changeTheme() {
-      if (this.$colorMode.unknown) {
-        return {}
-      }
-      this.$colorMode.preference =
-        this.$colorMode.preference === 'light' ? 'dark' : 'light'
-      console.error(this.$colorMode.preference)
-    }
-  }
-}
-</script>
 
 <style scoped>
 .logo {
