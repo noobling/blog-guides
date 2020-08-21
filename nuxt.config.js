@@ -97,6 +97,9 @@ export default {
   build: {
     devtools: true
   },
+  generate: {
+    devtools: true
+  },
   server: {
     host: '0.0.0.0'
   },
