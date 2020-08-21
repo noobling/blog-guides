@@ -1,5 +1,4 @@
 export default {
-  devtools: true,
   /*
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
@@ -95,7 +94,9 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    devtools: true
+  },
   server: {
     host: '0.0.0.0'
   },
