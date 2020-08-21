@@ -1,6 +1,6 @@
 <template>
   <header
-    class="header z-20"
+    class="header z-20 text-white"
     :class="{ 'fixed top-0': $nuxt.$route.name === 'index' }"
   >
     <div class="sm:container sm:mx-auto px-4 flex justify-between items-center">
@@ -8,8 +8,10 @@
         <button class="logo">cfc</button>
       </NuxtLink>
       <div class="hidden sm:flex justify-between items-center">
-        {{ $colorMode.preference }}
-        <button class="flex justify-between items-center p-2">
+        <button
+          class="flex justify-between items-center p-2"
+          @click="changeTheme()"
+        >
           <i class="material-icons-sharp">nights_stay</i>
         </button>
         <input
@@ -20,34 +22,21 @@
         />
       </div>
       <!-- <AppSearchInput class="ml-8" /> -->
-      <!-- <ColorMode class="ml-6 mt-2 h-6 w-6" /> -->
     </div>
   </header>
 </template>
 
 <script>
 export default {
-  // computed: {
-  //   btnLabel() {
-  //     return this.$colorMode.preference === 'light' ? 'dark' : 'light'
-  //   }
-  // },
-  // methods: {
-  //   changeMode() {
-  //     this.$colorMode.preference =
-  //       this.$colorMode.preference === 'light' ? 'dark' : 'light'
-  //   },
-  //   getClasses(color) {
-  //     // Does not set classes on ssr preference is system (because we know them on client-side)
-  //     if (this.$colorMode.unknown) {
-  //       return {}
-  //     }
-  //     return {
-  //       preferred: color === this.$colorMode.preference,
-  //       selected: color === this.$colorMode.value
-  //     }
-  //   }
-  // }
+  methods: {
+    changeTheme() {
+      if (this.$colorMode.unknown) {
+        return {}
+      }
+      this.$colorMode.preference =
+        this.$colorMode.preference === 'light' ? 'dark' : 'light'
+    }
+  }
 }
 </script>
 
