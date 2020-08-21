@@ -8,6 +8,9 @@
         <button class="logo">cfc</button>
       </NuxtLink>
       <div class="hidden sm:flex justify-between items-center">
+        <no-ssr>
+          {{ $colorMode }}
+        </no-ssr>
         <button class="flex justify-between items-center p-2">
           <i class="material-icons-sharp">nights_stay</i>
         </button>
@@ -24,7 +27,33 @@
   </header>
 </template>
 
-<style scoped class="postcss">
+<script>
+export default {
+  computed: {
+    btnLabel() {
+      return this.$colorMode.preference === 'light' ? 'dark' : 'light'
+    }
+  },
+  methods: {
+    changeMode() {
+      this.$colorMode.preference =
+        this.$colorMode.preference === 'light' ? 'dark' : 'light'
+    },
+    getClasses(color) {
+      // Does not set classes on ssr preference is system (because we know them on client-side)
+      if (this.$colorMode.unknown) {
+        return {}
+      }
+      return {
+        preferred: color === this.$colorMode.preference,
+        selected: color === this.$colorMode.value
+      }
+    }
+  }
+}
+</script>
+
+<style scoped>
 .logo {
   @apply font-mono font-bold text-xl;
 }
