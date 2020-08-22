@@ -94,11 +94,9 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {
-    devtools: true
-  },
+  build: {},
   generate: {
-    devtools: true
+    fallback: true
   },
   server: {
     host: '0.0.0.0'
