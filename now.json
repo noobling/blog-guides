@@ -11,6 +11,12 @@
   ],
   "routes": [
     { "src": "/_nuxt/.+", "headers": { "Cache-Control": "max-age=31557600" } },
-    { "src": "/(.*)", "dest": "/" }
+    {
+      "src": "/",
+      "dest": "/_nuxt/static/sw.js",
+      "headers": {
+        "cache-control": "public, max-age=43200, immutable"
+      }
+    }
   ]
 }
