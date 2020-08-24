@@ -8,16 +8,17 @@
         <button class="logo">cfc</button>
       </NuxtLink>
       <div class="hidden sm:flex justify-between items-center">
-        {{ $colorMode.preference }}
-        {{ $colorMode.value }}
         <button
+          :title="`Switch to ${toggleHeading} mode`"
           class="flex justify-between items-center p-2"
-          @click="
-            $colorMode.preference =
-              $colorMode.preference === 'light' ? 'dark' : 'light'
-          "
+          @click="$colorMode.preference = toggleHeading"
         >
-          <i class="material-icons-sharp">nights_stay</i>
+          <i
+            v-if="$colorMode.preference === 'light'"
+            class="material-icons-sharp"
+            >nights_stay</i
+          >
+          <i v-else class="material-icons-sharp">wb_sunny</i>
         </button>
         <input
           type="search"
@@ -26,11 +27,18 @@
           class="search placeholder-black opacity-50 focus:opacity-100"
         />
       </div>
-      <!-- <AppSearchInput class="ml-8" /> -->
     </div>
   </header>
 </template>
-
+<script>
+export default {
+  computed: {
+    toggleHeading() {
+      return this.$colorMode.preference === 'light' ? 'dark' : 'light'
+    }
+  }
+}
+</script>
 <style scoped>
 .logo {
   @apply font-mono font-bold text-xl;
