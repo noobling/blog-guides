@@ -1,6 +1,6 @@
 <template>
   <main class="sm:container sm:mx-auto px-4 mb-8 mt-16">
-    <h1 class="font-bold font-mono text-4xl mb-6">Blog Posts</h1>
+    <h1 class="font-bold font-mono text-4xl pt-2 mb-6">Blog Posts</h1>
     <ul class="grid">
       <li v-for="article of articles" :key="article.slug" class="w-full">
         <NuxtLink
@@ -13,7 +13,7 @@
             :src="article.img"
           />
 
-          <div class="p-5 flex flex-col justify-between w-full dark:bg-primary">
+          <div class="p-5 flex flex-col justify-between w-full">
             <h2 class="font-bold font-mono text-xl mb-2">
               {{ article.title }}
             </h2>
