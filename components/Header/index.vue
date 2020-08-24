@@ -10,15 +10,21 @@
       <div class="hidden sm:flex justify-between items-center">
         <button
           :title="`Switch to ${toggleHeading} mode`"
-          class="flex justify-between items-center p-2"
+          class="flex justify-between items-center w-10 h-10 p-2 border-white"
           @click="$colorMode.preference = toggleHeading"
         >
-          <i
-            v-if="$colorMode.preference === 'light'"
-            class="material-icons-sharp"
-            >nights_stay</i
-          >
-          <i v-else class="material-icons-sharp">wb_sunny</i>
+          <transition name="fade">
+            <i
+              v-if="$colorMode.preference === 'light'"
+              key="dark"
+              class="absolute material-icons-sharp"
+            >
+              nights_stay
+            </i>
+            <i v-else key="light" class="absolute material-icons-sharp">
+              wb_sunny
+            </i>
+          </transition>
         </button>
         <input
           type="search"
@@ -40,8 +46,16 @@ export default {
 }
 </script>
 <style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
 .logo {
-  @apply font-mono font-bold text-xl;
+  @apply font-mono font-bold text-xl py-1;
 }
 .header {
   @apply bg-primary h-16 w-full flex items-center py-4;

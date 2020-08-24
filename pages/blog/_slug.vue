@@ -16,7 +16,6 @@
         </h1>
         <span class="md:hidden">
           <p class="mb-0">by {{ article.author.name }}</p>
-          <!-- <p class="mb-1">{{ article.description }}</p> -->
           <p class="mb-4">
             <small>Last Updated: {{ formatDate(article.updatedAt) }}</small>
           </p>
@@ -33,7 +32,7 @@
         </p>
         <!-- table of contents -->
         <div class="sticky top-0 overflow-y-auto">
-          <nav v-if="article.toc.length > 0" class="mb-6 bg-primary">
+          <nav v-if="article.toc.length > 0" class="mb-6">
             <small class="font-mono">Table of Contents</small>
             <ul class="opacity-75">
               <li
