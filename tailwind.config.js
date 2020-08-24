@@ -44,6 +44,7 @@ module.exports = {
         warning: '#f5a623'
       },
       spacing: {
+        '72': '18rem',
         '96': '24rem',
         '128': '32rem'
       },
