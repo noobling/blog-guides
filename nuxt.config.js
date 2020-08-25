@@ -14,6 +14,9 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
+    htmlAttrs: {
+      lang: 'en'
+    },
     title: 'Guides | Coders for Causes',
     meta: [
       { charset: 'utf-8' },
