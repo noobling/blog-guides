@@ -29,16 +29,22 @@
             {{ article.title }}
           </h2>
           <p class="text-sm mb-2">by {{ article.author.name }}</p>
-          <p class="font-bold text-muted text-sm mb-3">
+          <p class="font-bold text-muted text-sm mb-4">
             {{ article.description }}
           </p>
-          <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+          <div>
             <button
               class="transition duration-150 border border-primary dark:border-secondary bg-primary dark:bg-transparent dark-hover:bg-secondary dark-hover:text-black text-white px-3 py-2"
+              @click="
+                $router.push({
+                  name: 'blog-slug',
+                  params: { slug: article.slug }
+                })
+              "
             >
               Read more
             </button>
-          </NuxtLink>
+          </div>
         </div>
       </li>
     </ul>
