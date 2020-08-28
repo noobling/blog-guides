@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@nuxt/content": "1.7.0",
-    "nuxt": "2.14.3",
+    "nuxt": "2.14.4",
     "@nuxtjs/color-mode": "1.0.3",
     "@nuxtjs/tailwindcss": "3.0.2",
     "prism-themes": "1.4.0",
