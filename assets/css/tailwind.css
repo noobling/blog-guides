@@ -12,6 +12,12 @@ h6 {
   @apply font-mono font-bold;
 }
 
+button:focus,
+a:focus {
+  outline-color: #01f1cc;
+  outline-offset: 1px;
+}
+
 .nuxt-content-highlight {
   @apply relative;
 }
