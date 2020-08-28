@@ -53,7 +53,11 @@ html {
   background: url('~assets/search-icon.svg') no-repeat 0.5rem center;
   background-size: 1.5rem;
   transition: all 0.5s;
-  @apply h-full w-full px-5 pl-10 bg-white absolute right-0;
+  @apply h-full w-full px-5 pl-10 bg-white absolute right-0 opacity-75;
+}
+.search-input:focus,
+.search-input[aria-expanded='true'] {
+  @apply opacity-100;
 }
 .search-result-list {
   @apply bg-white border border-primary list-none absolute left-0 z-40;

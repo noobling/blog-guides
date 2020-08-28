@@ -14,7 +14,7 @@
     <div class="absolute top-32 left-32 text-white">
       <NuxtLink to="/"><Logo /></NuxtLink>
       <div class="mt-16 -mb-3 flex flex-col uppercase text-sm">
-        <h1 class="text-4xl font-bold">
+        <h1 class="text-4xl">
           {{ articles[0].author.name }}
         </h1>
         <p class="mb-4">{{ articles[0].author.bio }}</p>

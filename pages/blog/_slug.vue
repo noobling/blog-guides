@@ -11,7 +11,7 @@
       class="sm:container sm:mx-auto px-4 relative mt-12 blog-grid gap-16 lg:gap-24"
     >
       <div>
-        <h1 class="font-mono overflow-x-hidden text-4xl md:text-5xl mb-4">
+        <h1 class="overflow-x-hidden text-4xl md:text-5xl mb-4">
           {{ article.title }}
         </h1>
         <span class="md:hidden">

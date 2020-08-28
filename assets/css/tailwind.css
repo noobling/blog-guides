@@ -2,6 +2,16 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  @apply font-mono font-bold;
+}
+
 .nuxt-content-highlight {
   @apply relative;
 }
@@ -13,6 +23,9 @@
 }
 .nuxt-content > * {
   @apply mb-4;
+}
+.nuxt-content code {
+  @apply font-semibold;
 }
 .nuxt-content blockquote {
   @apply pl-4 py-2 border-l-4 border-gray-600;

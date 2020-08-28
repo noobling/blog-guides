@@ -37,6 +37,7 @@
             aria-label="Search Articles"
             base-class="search"
             class="search-articles"
+            @submit="submit"
           />
         </div>
       </div>
@@ -66,6 +67,12 @@ export default {
     },
     getOptions(result) {
       return result.title
+    },
+    submit(result) {
+      this.$router.push({
+        name: 'blog-slug',
+        params: { slug: result.slug }
+      })
     }
   }
 }

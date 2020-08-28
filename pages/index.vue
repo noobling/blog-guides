@@ -1,6 +1,6 @@
 <template>
   <main class="sm:container sm:mx-auto px-4 mb-8 mt-16">
-    <h1 class="font-bold font-mono text-4xl pt-2 mb-6">Blog Posts</h1>
+    <h1 class="text-4xl pt-2 mb-6">Blog Posts</h1>
     <ul class="grid">
       <li v-for="article of articles" :key="article.slug" class="w-full">
         <NuxtLink
