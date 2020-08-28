@@ -1,29 +1,23 @@
 <template>
-  <div class="m-8">
-    <TheHeader />
-
-    <h1 class="font-bold text-4xl">Blog Posts</h1>
-    <ul class="flex flex-wrap">
-      <li
-        v-for="article of articles"
-        :key="article.slug"
-        class="xs:w-full md:w-1/2 px-2 xs:mb-6 md:mb-12 article-card"
-      >
+  <main class="sm:container sm:mx-auto px-4 mb-8 mt-16">
+    <h1 class="text-4xl pt-2 mb-6">Blog Posts</h1>
+    <ul class="grid">
+      <li v-for="article of articles" :key="article.slug" class="w-full">
         <NuxtLink
           :to="{ name: 'blog-slug', params: { slug: article.slug } }"
-          class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
+          class="flex flex-col"
         >
           <img
             v-if="article.img"
-            class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
+            class="h-48 w-full object-cover"
             :src="article.img"
           />
 
-          <div
-            class="p-6 flex flex-col justify-between xxlmin:w-1/2 xxlmax:w-full dark:bg-black-dark"
-          >
-            <h2 class="font-bold">{{ article.title }}</h2>
-            <p>by {{ article.author.name }}</p>
+          <div class="p-5 flex flex-col justify-between w-full">
+            <h2 class="font-bold font-mono text-xl mb-2">
+              {{ article.title }}
+            </h2>
+            <p class="text-sm mb-2">by {{ article.author.name }}</p>
             <p class="font-bold text-gray-600 text-sm">
               {{ article.description }}
             </p>
@@ -31,15 +25,7 @@
         </NuxtLink>
       </li>
     </ul>
-    <footer class="flex justify-center border-gray-500 border-t-2">
-      <p class="mt-4">
-        Created by
-        <a href="https://codersforcauses.org/" class="font-bold hover:underline"
-          >CodersForCauses</a
-        >
-      </p>
-    </footer>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -56,14 +42,9 @@ export default {
 }
 </script>
 
-<style class="postcss">
-.article-card {
-  border-radius: 8px;
-}
-.article-card a {
-  border-radius: 8px;
-}
-.article-card img div {
-  border-radius: 8px 0 0 8px;
+<style scoped class="postcss">
+.grid {
+  grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+  @apply grid gap-16;
 }
 </style>
