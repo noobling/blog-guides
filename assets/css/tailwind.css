@@ -70,5 +70,8 @@ a:focus {
   @apply list-inside;
 }
 .nuxt-content-editor {
+  @apply bg-gray-100;
+}
+.dark-mode .nuxt-content-editor {
   @apply bg-gray-900;
 }

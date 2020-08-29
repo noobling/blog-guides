@@ -63,7 +63,7 @@ export default {
 }
 </script>
 
-<style scoped class="postcss">
+<style scoped>
 .grid {
   grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
   @apply grid gap-16;
