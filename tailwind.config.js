@@ -5,6 +5,9 @@
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true
+  },
   theme: {
     darkSelector: '.dark-mode',
     screens: {
@@ -30,7 +33,8 @@ module.exports = {
     },
     borderWidth: {
       default: '1px',
-      '0': '0',
+      '0': 0,
+      '1/2': '0.5px',
       '2': '2px',
       '4': '4px'
     },
@@ -41,7 +45,10 @@ module.exports = {
         accent: '#01f1cc',
         success: '#0070f3',
         danger: '#ff0000',
-        warning: '#f5a623'
+        warning: '#f5a623',
+        muted: '#6c757d',
+        dark: '#111111',
+        light: '#f8f9fa'
       },
       spacing: {
         '72': '18rem',
