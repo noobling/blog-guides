@@ -10,7 +10,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: require/_nuxt/assets/content/davidthrone.jpg
+  img: /_nuxt/assets/content/davidthrone.jpg
 ---
 
 Ever since the release of material design by google websites have been adopting it for its beautiful design and it’s ability to give a native and responsive feel regardless of the device and screen width. Visit the official site here https://material.io

@@ -2,7 +2,7 @@
 title: How to Import MySQL Data Remotely
 description: Importing MySQL data remotely
 updatedAt: December 30, 2018
-img: https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80
+img: https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60
 alt: sql remotely
 tags:
   - mysql
@@ -10,7 +10,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: require/_nuxt/assets/content/davidthrone.jpg
+  img: /_nuxt/assets/content/davidthrone.jpg
 ---
 
 Your database contains the most valuable part of your application, its data. All other parts of your applications Frontend, backend, API, server, load balancer etc can easily be recreated but the data in your application is unique. It cannot be easily reproduced and the information contained in the data has a potential infinite economic worth.

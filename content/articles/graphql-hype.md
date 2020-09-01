@@ -9,7 +9,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: require/_nuxt/assets/content/davidthrone.jpg
+  img: /_nuxt/assets/content/davidthrone.jpg
 ---
 
 Facebook initially developed GraphQL for internal consumption in 2012/2013 before publicly releasing it in 2015 and subsequently moved it to a foundation hosted by the non-profit Linux Foundation. Since then it has gained a lot of developer attention and many influential companies and people have used it in production.
@@ -123,7 +123,7 @@ returns
 }
 ```
 
-The idea is that we call the `createPerson()` function but what is cool in this case is that this is like an endpoint in REST but we can use programming like syntax (A function call) to access the server's API. Again we can sepcify exactly what we want back from the server, in this case it is `name` and `age`.
+The idea is that we call the `createPerson()` function but what is cool in this case is that this is like an endpoint in REST but we can use programming like syntax (A function call) to access the server's API. Again we can specify exactly what we want back from the server, in this case it is `name` and `age`.
 
 This is JSON like syntax, the `!` means that the data field is required. We can easily define a relationship by referencing the type in this case there is a one-to-many relationship with `Person` and `Post`
 
@@ -167,13 +167,13 @@ So if we could write some code that would get (resolve) each field that would be
 
 - **Efficient** - This is an arguable one because with a well design REST API they can be just as efficient but it is harder to achieve. By efficient I mean less data being transported across the wire and less HTTP requests being opened. There is less data being transported because on the client side we define the exact data that we want using GraphQL's query language. This is in contrast to how normal APIs behave where they normally return you more data then you need, usually you would have to specify filters to stop the API from doing that but it is not as expressive as GraphQL. Opening HTTP connections is pretty expensive and there is actually a limit on the number of HTTP connections a browser can have at once (~10 from memory) however GraphQL only uses one HTTP request to retrieve all your data. Actually all requests in GraphQL are done with the same endpoint.
 
-- **Modern with great tooling** This is my personal favourite about GraphQL we have built around this technology, providing some of the best tools and services I have ever seen for a web technology. GraphQL playground allows us to quickly discover the API and construct the exact query we want. In constrast writing the correct SQL statement or ORM statement is much harder. This doesn't mean its dead simple to construct the correct GraphQL it just means our life is a little easier. There also exists some very nice services that provide a full GraphQL API fromt the schema we provide. Some examples are hasura, prisma and graphcool.
+- **Modern with great tooling** This is my personal favourite about GraphQL we have built around this technology, providing some of the best tools and services I have ever seen for a web technology. GraphQL playground allows us to quickly discover the API and construct the exact query we want. In contrast writing the correct SQL statement or ORM statement is much harder. This doesn't mean its dead simple to construct the correct GraphQL it just means our life is a little easier. There also exists some very nice services that provide a full GraphQL API from the schema we provide. Some examples are hasura, prisma and graphcool.
 
 ### Disadvantages
 
 - **Too low level** - I touched on this point a bit in the flexibility point under advantages but the biggest killer for me is this. Now this is why you shouldn't always follow the big players in the tech industry because their resources and teams are different to the majority of tech companies out there. Most of us work in small teams and in small companies where time and resources are very important. We operate under conditions where we have to be highly productive while producing high quality software with a small team or even no team at all.
 
-GraphQL reminds me of Express in the sense where it is an unopinionated framework giving the developer the freedom to implement their own authentication and file structure. As a consequence we have to implement or utilise third party libraries for lower level features that you would normally get for free from other frameworks e.g. ORMs, database migrations, testing, authentication, authorisation, validation, error handling, security. This is fine if you have the time, resources and knowledge within your team but if you don't dangerous consequences could arise besides wasting a lot of time trying to integrate all these dam third party libraries. For example security, if you have a lot of freedom and you don't know what you are doing it is very easy to introduce security vulnerabilities e.g. forgetting to not protect an endpoint.
+GraphQL reminds me of Express in the sense where it is an unopinionated framework giving the developer the freedom to implement their own authentication and file structure. As a consequence we have to implement or utilise third party libraries for lower level features that you would normally get for free from other frameworks e.g. ORMs, database migrations, testing, authentication, authorization, validation, error handling, security. This is fine if you have the time, resources and knowledge within your team but if you don't dangerous consequences could arise besides wasting a lot of time trying to integrate all these dam third party libraries. For example security, if you have a lot of freedom and you don't know what you are doing it is very easy to introduce security vulnerabilities e.g. forgetting to not protect an endpoint.
 
 Having said all that there are reliable services that build upon GraphQL that remove a lot of the boilerplate for us. I think these services are probably more suitable for the majority of developers. https://hasura.io/ & https://www.prisma.io/ & https://tipe.io/ (If ever it is going to be released)
 

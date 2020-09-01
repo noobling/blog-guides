@@ -2,7 +2,7 @@
 title: Free stuff for students
 description: What are some free stuff you can get as a student?
 updatedAt: December 1, 2018
-img: https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80
+img: https://images.unsplash.com/photo-1561164517-686f490ee86d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=60
 alt: Free stuff
 tags:
   - free-stuff
@@ -10,7 +10,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: require/_nuxt/assets/content/davidthrone.jpg
+  img: /_nuxt/assets/content/davidthrone.jpg
 ---
 
 Being a student and a software developer is actually quite an attractive position for a lot of organizations so they offer you a lot of discounts and free stuff. Here is an on going list :+1:

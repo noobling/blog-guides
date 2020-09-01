@@ -26,6 +26,7 @@ a:focus {
 }
 .nuxt-content-highlight pre {
   border-radius: 0 !important;
+  @apply text-sm;
 }
 .nuxt-content > * {
   @apply mb-4;

@@ -10,7 +10,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: require/_nuxt/assets/content/davidthrone.jpg
+  img: /_nuxt/assets/content/davidthrone.jpg
 ---
 
 Easy design tips to use on your site immediately https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886

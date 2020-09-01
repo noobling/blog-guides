@@ -15,7 +15,7 @@ author:
 
 The much anticipated annual SO survey has just dropped here is the link to the entire results https://insights.stackoverflow.com/survey/2018/
 
-Here are the key take aways:
+Here are the key takeaways:
 
 - Data scientists and Dev Ops are the highest paid
 - Most popular development environment Visual Studio Code

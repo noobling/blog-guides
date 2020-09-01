@@ -2,7 +2,7 @@
 title: Douglas Crockford Notes
 description: Notes on the ideal programming language by Douglas Crockford
 updatedAt: December 30, 2018
-img: https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80
+img: https://upload.wikimedia.org/wikipedia/commons/2/24/Douglas_Crockford%2C_February_2013.jpg
 alt: Douglas Crockford
 tags:
   - ideal-programming-language
@@ -10,7 +10,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: require/_nuxt/assets/content/davidthrone.jpg
+  img: /_nuxt/assets/content/davidthrone.jpg
 ---
 
 https://www.youtube.com/watch?v=NPB34lDZj3E

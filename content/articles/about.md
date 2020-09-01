@@ -2,7 +2,7 @@
 title: About Coders for Causes and Blog
 description: About us
 updatedAt: December 30, 2018
-img: https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80
+img: https://og-social-cards.vercel.app/**.%2Fcoders_for_causes**.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fcodersforcauses.org%2Flogo%2Fcfc_logo_white_full.svg
 tags:
   - about-us
 alt: About

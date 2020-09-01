@@ -10,7 +10,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: require/_nuxt/assets/content/davidthrone.jpg
+  img: /_nuxt/assets/content/davidthrone.jpg
 ---
 
 Most websites use the https protocol to serve all their traffic. This is to ensure that the data is encrypted so no unintended party can read any of the data that is being sent. This is important for privacy reasons as you wouldn't want anyone to be able to see what you are browsing on the internet and also security. You wouldn't want other people finding out your email and passwords. Amazon offers a free and easy to use service Amazon Certificate Manager: https://aws.amazon.com/certificate-manager/ Of course they have their own documentation to set this up https://docs.aws.amazon.com/acm/latest/userguide/gs.html however I find that their docs are rather lengthy and not really optimal for beginners. Their setups are also deliberately simple and so don't really cover real world difficulties well. It would be nice to have some sort of discussion at the end of each doc sort of like what digital ocean provides https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04 to help with this.

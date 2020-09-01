@@ -10,7 +10,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: require/_nuxt/assets/content/davidthrone.jpg
+  img: /_nuxt/assets/content/davidthrone.jpg
 ---
 
 Here are a list of my favourite tools I will always download on my new computer. This is aimed at frontend development.
@@ -38,9 +38,9 @@ Here are a list of my favourite tools I will always download on my new computer.
 - **Zsh**
   - Improves your terminal experience e.g. the look of it to and better autocompletion
 - **VSCode**
-  - Suprisingly built on electron its the most popular IDE out there and comes fully featured. Only reason I use it is because I am most familiar with it.
+  - Surprisingly built on electron its the most popular IDE out there and comes fully featured. Only reason I use it is because I am most familiar with it.
 - **Gitkraken**
-  - This ones optional and has its drawbacks, a lot of its features are already there. I think now days vscode does a pretty good job at visualising your git changes and you can quickly commit in terminal with git shortcuts. But worth taking a look at.
+  - This ones optional and has its drawbacks, a lot of its features are already there. I think now days vscode does a pretty good job at visualizing your git changes and you can quickly commit in terminal with git shortcuts. But worth taking a look at.
 - **Team communication software**
   - This can be anything e.g. slack, teams, discord, gitter, spectrum. My favourite is teams just don't use facebook messenger..
   - This makes it easier to collaborate since it is much easier to share code snippets. Pin important things and add reminders for the entire team

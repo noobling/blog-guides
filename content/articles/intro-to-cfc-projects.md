@@ -2,7 +2,7 @@
 title: Introduction to CFC projects
 description: Introduction the Coders For Causes club on UWA!
 updatedAt: June 20, 2019
-img: https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60
+img: https://og-social-cards.vercel.app/**.%2Fcoders_for_causes**.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fcodersforcauses.org%2Flogo%2Fcfc_logo_white_full.svg
 alt: Introduction to CFC projects
 tags:
   - introduction

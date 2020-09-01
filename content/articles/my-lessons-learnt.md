@@ -2,7 +2,7 @@
 title: Lessons Learnt & Looking at the future and past of CFC
 description: Looking at what I have learnt while at CFC
 updatedAt: January 29, 2019
-img: https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80
+img: https://og-social-cards.vercel.app/**.%2Fcoders_for_causes**.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fcodersforcauses.org%2Flogo%2Fcfc_logo_white_full.svg
 alt: Lessons Learnt
 tags:
   - cfc
@@ -10,7 +10,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: require/_nuxt/assets/content/davidthrone.jpg
+  img: /_nuxt/assets/content/davidthrone.jpg
 ---
 
 ## Lessons Learnt
@@ -22,7 +22,7 @@ I thought I would share some of the wisdom that I have gained in the trenches.
 3. **Use https://sentry.io to catch bugs in production** (that's the live software that has users). It provides the exact line of code where the program failed at!
 4. **It is very easy for bugs to occur when switching from local/development to production** especially if you are an inexperienced dev. Easy to fix and common bugs include ones relating to different URLs, HTTPS and HTTP, the difference in databases e.g. Postgres and SQLite. This issue can be mostly resolved by using just a frontend app or utilise BaaS like Auth0 and Graphcool.
 5. When we copy code or use code someone else wrote we think we know what is going on but really we don't. It takes a long to be a competent programmer so be patient. <nuxt-image file="confidence-vs-competence.jpg" alt="Confidence vs competence graph" />
-6. **Difference between uni programming and work programming is large** I know this is a point that is quite often emphasised but for me, it is not because you learn different things or what you learn in uni is impractical. It is more to do with boredom. At work, you have to program for 7 hours a day most likely on the same project 5 days a week. In a week you probably do more programming than you do in a semester at uni.
+6. **Difference between uni programming and work programming is large** I know this is a point that is quite often emphasized but for me, it is not because you learn different things or what you learn in uni is impractical. It is more to do with boredom. At work, you have to program for 7 hours a day most likely on the same project 5 days a week. In a week you probably do more programming than you do in a semester at uni.
 7. **Use Nuxt + Vuetify + Graphcool + Now for hackathons** I actually haven't tried this stack out before but I am pretty sure you could build fully featured apps really quickly with 0 bugs perfect for a hackathon.
 8. **Future is frontend frameworks + minimal backend** By future I mean next 2-3 years because web technology is changing at an incredibly fast pace. A lot of business logic and software complexity has shifted from the backend to the frontend for example sorting data. This has meant that we use api servers rather than fully featured backend frameworks that have their own templating language for the frontend. However I think those heavy backend frameworks always have a place, they allow us to quickly produce production web apps. But if we wanted to build flexible, scalable long term projects frontend framework + api/graphql server is the way to go.
 

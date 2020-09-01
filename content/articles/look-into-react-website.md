@@ -2,7 +2,7 @@
 title: Look into React Website
 description: Looking at making websites in React
 updatedAt: January 14, 2020
-img: https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80
+img: https://images.unsplash.com/photo-1566241440091-ec10de8db2e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=60
 alt: React website
 tags:
   - react
@@ -10,12 +10,12 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: require/_nuxt/assets/content/davidthrone.jpg
+  img: /_nuxt/assets/content/davidthrone.jpg
 ---
 
 ## Preamble
 
-First post for 2020 🎉. Probably post a year in review soonish... Welcome back to our projects or work :)
+First post for 2020 🎉. Probably post a year in review soon-ish... Welcome back to our projects or work :)
 
 The #1 advice I always give to uni students is to code as much as you can. Try to find something you are passionate about and code it. I think that is the best way to get started in the software industry but at some point you will start to get curious and start reading the open source code you use every day and realise you don't know a whole lot. Don't feel bad it doesn't mean you are dumb, it just means there is a lot to software.
 
@@ -23,7 +23,7 @@ To improve it is important to read other people's code to get inspiration for ne
 
 ## The High Level
 
-At its core its just a static site created in [Gatsby](https://www.gatsbyjs.org/). Its interesting why they did not use their own [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html) I am guessing its because Gatsby is already optimised for building fast websites with great SEO.
+At its core its just a static site created in [Gatsby](https://www.gatsbyjs.org/). Its interesting why they did not use their own [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html) I am guessing its because Gatsby is already optimized for building fast websites with great SEO.
 
 ### Key tech
 
@@ -55,7 +55,7 @@ and a bunch of other stuff like people's names, versions and languages basically
 
 ### Writing our own UI library FTW!
 
-UI libraries have always been a cause of pain and joy. On the one hand they provide a lot of useful well tested components that you can drop into your app and it works. But if there is even a hint of a need for customisation shit starts to get real. Their massive API surface is the only bridge to the jungle of layers of abstractions.
+UI libraries have always been a cause of pain and joy. On the one hand they provide a lot of useful well tested components that you can drop into your app and it works. But if there is even a hint of a need for customization shit starts to get real. Their massive API surface is the only bridge to the jungle of layers of abstractions.
 
 In this case the Facebook team has chosen to write their own mini UI library which I think they have done really well. Under the `components` folder there is a collection of simple general ui components.
 <nuxt-image file="ui-component-list.png" alt="list of ui components" />

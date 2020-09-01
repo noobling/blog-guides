@@ -2,7 +2,7 @@
 title: Weekly Learnings 23rd of May
 description: Weekly learnings for the 23rd of May 2019
 updatedAt: May 23, 2019
-img: https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80
+img: https://images.unsplash.com/photo-1584697964400-2af6a2f6204c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1634&q=60
 alt: Weekly learnings
 tags:
   - javascript
@@ -11,7 +11,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: require/_nuxt/assets/content/davidthrone.jpg
+  img: /_nuxt/assets/content/davidthrone.jpg
 ---
 
 ## Storing JWT tokens in localStorage
