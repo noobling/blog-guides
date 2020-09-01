@@ -2,7 +2,7 @@
 title: Understanding Events in Laravel
 description: Explaination on events in Laravel
 updatedAt: December 30, 2018
-img: https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80
+img: https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q-60
 alt: Laravel events
 tags:
   - laravel

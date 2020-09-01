@@ -2,7 +2,7 @@
 title: Weekly Learnings 23rd of May
 description: Weekly learnings for the 23rd of May 2019
 updatedAt: May 23, 2019
-img: https://images.unsplash.com/photo-1584697964400-2af6a2f6204c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1634&q=60
+img: https://images.unsplash.com/photo-1584697964400-2af6a2f6204c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=60
 alt: Weekly learnings
 tags:
   - javascript

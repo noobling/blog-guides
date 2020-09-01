@@ -2,7 +2,7 @@
 title: My software tools
 description: Looking at David's software tools
 updatedAt: April 26, 2019
-img: https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80
+img: https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q-60
 alt: Software tools
 tags:
   - software-tools
