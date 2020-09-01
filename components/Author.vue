@@ -9,7 +9,7 @@
         loading="lazy"
         class="h-48 w-full object-cover"
         :src="author.img"
-        :alt="`author.name's ${photo}`"
+        :alt="`${author.name}'s photo`"
       />
       <div class="flex flex-col m-4">
         <h4 class="font-semibold">Author</h4>
