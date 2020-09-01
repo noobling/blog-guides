@@ -79,6 +79,62 @@ export default {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString('en', options)
     }
+  },
+  head() {
+    return {
+      title: `${this.article.title} | Coders for Causes`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.article.description
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: `${this.article.title} | Coders for Causes`
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.article.description
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: `https://og-social-cards.vercel.app/**.%2F${encodeURIComponent(
+            this.article.slug.split('-').join('_')
+          )}**.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fcodersforcauses.org%2Flogo%2Fcfc_logo_white_full.svg`
+        },
+        {
+          hid: 'twitter:url',
+          name: 'twitter:url',
+          content: `https://guides.codersforcauses.org/${this.article.slug}`
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: `${this.article.title} | Coders for Causes`
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.article.description
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: `https://og-social-cards.vercel.app/**.%2F${encodeURIComponent(
+            this.article.slug.split('-').join('_')
+          )}**.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fcodersforcauses.org%2Flogo%2Fcfc_logo_white_full.svg`
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `https://guides.codersforcauses.org/${this.article.slug}`
+        }
+      ]
+    }
   }
 }
 </script>
