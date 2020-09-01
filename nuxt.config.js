@@ -24,7 +24,73 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'Guides by the Coders for Causes committee for coders.'
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Guides | Coders for Causes'
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Guides by the Coders for Causes committee for coders.'
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content:
+          'https://og-social-cards.vercel.app/**.%2Fguides**.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fcodersforcauses.org%2Flogo%2Fcfc_logo_white_full.svg'
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      {
+        name: 'twitter:creator',
+        content: '@codersforcauses'
+      },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://guides.codersforcauses.org/'
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Guides | Coders for Causes'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Guides by the Coders for Causes committee for coders.'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content:
+          'https://og-social-cards.vercel.app/**.%2Fguides**.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fcodersforcauses.org%2Flogo%2Fcfc_logo_white_full.svg'
+      },
+      {
+        property: 'og:type',
+        content: 'website'
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://guides.codersforcauses.org/'
+      },
+      {
+        property: 'og:image:width',
+        content: '512'
+      },
+      {
+        property: 'og:image:height',
+        content: '293'
+      },
+      {
+        property: 'og:site_name',
+        content: 'Coders for Causes'
       }
     ],
     link: [
@@ -39,8 +105,14 @@ export default {
         href: 'https://fonts.googleapis.com/',
         crossOrigin: ''
       },
+      {
+        rel: 'preconnect',
+        href: 'https://unsplash.it/',
+        crossOrigin: ''
+      },
       { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com/' },
       { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com/' },
+      { rel: 'dns-prefetch', href: 'https://unsplash.it/' },
       {
         rel: 'stylesheet',
         href:
