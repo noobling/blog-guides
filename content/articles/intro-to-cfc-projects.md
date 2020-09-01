@@ -1,6 +1,7 @@
 ---
 title: Introduction to CFC projects
-description: Learning how to use @nuxt/content to create a blog
+description: Introduction the Coders For Causes club on UWA!
+updatedAt: June 20, 2019
 img: https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60
 alt: Introduction to CFC projects
 tags:
@@ -9,7 +10,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: https://images.unsplash.com/photo-1533636721434-0e2d61030955?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
+  img: (~/assets/content/davidthrone.jpg)
 ---
 
 Thank you for choosing to help out in one of our charity projects 💜. We love and appreciate the fact that you have volunteered your time for a great cause.
