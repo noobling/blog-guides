@@ -9,9 +9,10 @@
       >
         <img
           v-if="article.img"
-          class="h-48 w-full object-cover"
+          loading="lazy"
           :src="article.img"
           :alt="article.alt || 'Article header image'"
+          class="h-48 w-full object-cover"
         />
         <div class="p-5 flex flex-col justify-between h-full w-full">
           <div

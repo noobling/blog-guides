@@ -2,6 +2,7 @@
   <article class="w-screen mb-8">
     <div v-show="article.img" class="relative w-screen h-96">
       <img
+        loading="lazy"
         :src="article.img"
         :alt="article.alt"
         class="absolute h-full w-full object-cover"

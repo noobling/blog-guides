@@ -4,6 +4,7 @@
   >
     <div class="relative lg:w-1/2 xs:w-full xs:h-84 lg:h-full post-left">
       <img
+        loading="lazy"
         :src="articles[0].author.img"
         :alt="articles[0].author.name"
         class="absolute h-full w-full object-cover"
@@ -41,9 +42,10 @@
           >
             <img
               v-if="article.img"
-              class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
+              loading="lazy"
               :src="article.img"
               :alt="article.alt"
+              class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
             />
 
             <div

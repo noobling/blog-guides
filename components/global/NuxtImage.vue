@@ -1,5 +1,6 @@
 <template>
   <img
+    loading="lazy"
     :src="require(`@/assets/content/${file}`)"
     :alt="alt"
     class="w-full object-contain"

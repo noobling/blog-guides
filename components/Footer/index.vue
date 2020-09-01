@@ -2,6 +2,7 @@
   <footer class="footer">
     <div class="sm:container sm:mx-auto p-4 flex justify-between items-center">
       <img
+        loading="lazy"
         src="@/assets/logo/cfc_logo_white_full.svg"
         alt="Coders for Causes wordmark"
         class="object-contain h-10 sm:h-12"
