@@ -109,7 +109,7 @@ export default {
         {
           hid: 'twitter:url',
           name: 'twitter:url',
-          content: `https://guides.codersforcauses.org/${this.article.slug}`
+          content: `https://guides.codersforcauses.org/blog/${this.article.slug}`
         },
         {
           hid: 'og:title',
@@ -131,7 +131,7 @@ export default {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: `https://guides.codersforcauses.org/${this.article.slug}`
+          content: `https://guides.codersforcauses.org/blog/${this.article.slug}`
         }
       ]
     }
