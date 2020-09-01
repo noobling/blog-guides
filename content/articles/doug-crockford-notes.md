@@ -10,7 +10,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: require(~/assets/content/davidthrone.jpg)
+  img: require/_nuxt/assets/content/davidthrone.jpg
 ---
 
 https://www.youtube.com/watch?v=NPB34lDZj3E

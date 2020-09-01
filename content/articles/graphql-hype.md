@@ -9,7 +9,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: require(~/assets/content/davidthrone.jpg)
+  img: require/_nuxt/assets/content/davidthrone.jpg
 ---
 
 Facebook initially developed GraphQL for internal consumption in 2012/2013 before publicly releasing it in 2015 and subsequently moved it to a foundation hosted by the non-profit Linux Foundation. Since then it has gained a lot of developer attention and many influential companies and people have used it in production.

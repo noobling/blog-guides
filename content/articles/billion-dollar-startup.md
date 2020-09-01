@@ -9,7 +9,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: (~/assets/content/davidthrone.jpg)
+  img: /_nuxt/assets/content/davidthrone.jpg
 ---
 
 Tech companies are constantly being acquired for hundreds of millions even billions of dollars. Take for example the this recent acquisition by Amazon http://www.businessinsider.com/why-amazon-acquired-ring-2018-3/?r=AU&IR=T or our very own Australian company Canva https://techcrunch.com/2018/01/08/new-sequoia-china-investment-values-australian-design-company-canva-at-1-billion/

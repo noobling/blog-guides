@@ -10,7 +10,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: require(~/assets/content/davidthrone.jpg)
+  img: require/_nuxt/assets/content/davidthrone.jpg
 ---
 
 Your database contains the most valuable part of your application, its data. All other parts of your applications Frontend, backend, API, server, load balancer etc can easily be recreated but the data in your application is unique. It cannot be easily reproduced and the information contained in the data has a potential infinite economic worth.

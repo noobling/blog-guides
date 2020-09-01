@@ -10,7 +10,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: require(~/assets/content/davidthrone.jpg)
+  img: require/_nuxt/assets/content/davidthrone.jpg
 ---
 
 There will always come a time when you need to move your website or more likely your database to another hosting platform. For example you find a provider that offers a better deal or service. This is generally a dreaded experience because A) You are not a dev ops expert B) One wrong move and everything blows up. C) You can't Google your way out of it. I have devised a list of steps that covers the general things that I have come up with moving websites around over the years (so don't expect it to cover everything).

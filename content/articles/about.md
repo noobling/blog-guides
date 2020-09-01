@@ -9,7 +9,7 @@ alt: About
 author:
   name: David Yu
   bio: I love to code
-  img: (~/assets/content/davidthrone.jpg)
+  img: /_nuxt/assets/content/davidthrone.jpg
 ---
 
 This blog was started by [David](https://github.com/noobling) which mainly discusses software and tips for student/professional developers. Content would revolve around what I am working on. Writing helps me learn. Underneath the hood this blog is built using Nuxt/Vue.

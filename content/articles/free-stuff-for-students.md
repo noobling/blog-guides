@@ -10,7 +10,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: require(~/assets/content/davidthrone.jpg)
+  img: require/_nuxt/assets/content/davidthrone.jpg
 ---
 
 Being a student and a software developer is actually quite an attractive position for a lot of organizations so they offer you a lot of discounts and free stuff. Here is an on going list :+1:

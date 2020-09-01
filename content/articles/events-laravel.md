@@ -11,7 +11,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: require(~/assets/content/davidthrone.jpg)
+  img: require/_nuxt/assets/content/davidthrone.jpg
 ---
 
 I have grown to like the Laravel framework very much even though I am not a fan of php. The reason why I like it so much is because it takes care of a lot of things that you would normally have to try implement yourself or use an unofficial library such as authentication, form validation, sending emails, pusher notifications, caching, oauth. It is insane how easy Laravel makes implementing these things where as in other frameworks it would take so much pouring through of documentation just to make things work. Lastly their test suit--phpunit--is probably the best test suite i have ever used.

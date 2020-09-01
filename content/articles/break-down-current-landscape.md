@@ -10,7 +10,7 @@ tags:
 author:
   name: David Yu
   bio: I love to code
-  img: (~/assets/content/davidthrone.jpg)
+  img: /_nuxt/assets/content/davidthrone.jpg
 ---
 
 The much anticipated annual SO survey has just dropped here is the link to the entire results https://insights.stackoverflow.com/survey/2018/
