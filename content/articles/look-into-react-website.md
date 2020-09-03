@@ -46,8 +46,9 @@ Let's dig to each point to understand the why 🕳
 
 ### Separation of code and content
 
-Gatsby encourages this through its graphql api thats generated from different data sources. You specify these sources it can be from a website like [contentful](https://www.contentful.com/), an api like twitter or most commonly from your file system. In this case the Facebook team has created a folder aptly name `content` which holds most of the websites content for example the documentation
+Gatsby encourages this through its graphql api thats generated from different data sources. You specify these sources it can be from a website like [contentful](https://www.contentful.com/), an api like twitter or most commonly from your file system. In this case the Facebook team has created a folder aptly name `content` which holds most of the websites content for example the documentation.
 <nuxt-image file="docs-content.png" alt="documentation files" />
+
 Additionally they do it for other things like links too e.g. `nav.yml`
 <nuxt-image file="nav-yaml.png" alt="nav yaml file picture" />
 
@@ -59,9 +60,10 @@ UI libraries have always been a cause of pain and joy. On the one hand they prov
 
 In this case the Facebook team has chosen to write their own mini UI library which I think they have done really well. Under the `components` folder there is a collection of simple general ui components.
 <nuxt-image file="ui-component-list.png" alt="list of ui components" />
+
 They don't include any app specific logic and instead use composition (using `children` prop) to add that kind of stuff which is provided by another component which reads the content from either a `.yml` file or from the GraphQL API (so much encapsulation :O) so it ends up something like this
 
-```jsx
+```jsx[example.jsx]
 <Header>
   <HeaderText>
 </Header>
@@ -78,7 +80,7 @@ import content from './some.yml'
 
 `theme.js` holds most of the site's css. It contains things like colors, breakpoints, font sizes for different types of text and it changes according to the screen width, styling for links
 
-```js
+```js[theme.js]
 const SIZES = {
   xsmall: { min: 0, max: 599 },
   small: { min: 600, max: 779 },
@@ -112,11 +114,11 @@ const fonts = {
 };
 ```
 
-Generally a theme file for UI frameworks contain the custom branding for the website and will include colors, fontsizes and breakpoints however in this case it includes a bunch of other stuff like the responsiveness and styling for specific things like links and headings. This makes the file huge at 450 lines, this specific code should belong in its respective components and leave the theme.js as a place to configure the existing styles rather than writing styles for components.
+Generally a theme file for UI frameworks contain the custom branding for the website and will include colors, font sizes and breakpoints however in this case it includes a bunch of other stuff like the responsiveness and styling for specific things like links and headings. This makes the file huge at 450 lines, this specific code should belong in its respective components and leave the theme.js as a place to configure the existing styles rather than writing styles for components.
 
 To build responsive websites we use the `media query` api which will conditionally apply css depending on the screen width. For me the api has always been hard to remember so I love what they have done here, by writing a little helper function on top of the media query api.
 
-```js
+```js[theme.js]
 const media = {
   greaterThan(key: Size) {
     return `@media (min-width: ${SIZES[key].min}px)`
@@ -131,7 +133,7 @@ const media = {
 }
 ```
 
-it makes code a lot more readable.
+It makes code a lot more readable.
 
 ### Are tests useless 🤔
 
@@ -151,7 +153,7 @@ No one ever reads comments. They will rather wrestle with the code than to read 
 
 The `TitleAndMetaTag` component holds most of the `<head></head>` elements
 
-```jsx
+```jsx[TitleAndMetaTag.jsx]
 <Helmet title={title}>
   <meta property="og:title" content={title} />
   <meta property="og:type" content="website" />

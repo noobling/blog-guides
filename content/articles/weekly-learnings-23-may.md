@@ -37,14 +37,14 @@ If you use `<HashRouter></HashRouter>` component then you can navigate with `loc
 
 ## A better way to format your project
 
-```sh
+```bash
 yarn add prettier --dev --exact
 yarn add pretty-quick husky --dev
 ```
 
 Add this to your package.json
 
-```js
+```json[package.json]
 { "husky": { "hooks": { "pre-commit": "pretty-quick --staged" } } }
 ```
 

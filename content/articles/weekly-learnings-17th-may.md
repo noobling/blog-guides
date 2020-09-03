@@ -20,12 +20,13 @@ You can use `debugger` statement to breakpoint an application. Just open dev too
 
 Cypress makes testing a lot easier and I will be using it as an replacement for jest puppeteer. Might be really useful to scrape websites even though the website explicitly says not to. I don't usually like to recommend changes to your tech stack but I think the better developer experience through their interactive testing environment, in depth, clear and concise documentation and the ability to finally write e2e code that actually works the way you expect it to is a game changer for me so I will adopt it from now on.
 
-```js
+```js[example.js]
 cy.visit('http://google.com')
 cy.contains('google')
 ```
 
-The above code is used to see if the word `google` exists in the webpage that is loaded. This code actually works imagine how hard this would have been in other e2e testing frameworks. Firstly you have to await that shit then you would have to handle the case that the word google could have been loaded after the main page load so you have to some how handle that too. And after all that it still might not work :/.... Cypress really does live up to their claim that they are >fixing frontend testing because it has been broken for a long time.
+The above code is used to see if the word `google` exists in the webpage that is loaded. This code actually works imagine how hard this would have been in other e2e testing frameworks. Firstly you have to await that shit then you would have to handle the case that the word google could have been loaded after the main page load so you have to some how handle that too. And after all that it still might not work :/.... Cypress really does live up to their claim that they are
+> fixing frontend testing because it has been broken for a long time.
 
 ## Formatting and linting
 
@@ -33,7 +34,7 @@ You should always use lint-staged with husky to format/lint your code before it 
 
 Eslint with prettier always has conflicting issues. However doing this seems to fix it.
 
-```
+```json[.eslintrc.json]
 {
   "extends": ["prettier"],
   "plugins": ["import"],

@@ -28,7 +28,7 @@ This is like defining your tables in a relational database. Note that you may st
 
 Syntax for writing schemas is called [Schema Definition Language](https://www.prisma.io/blog/graphql-sdl-schema-definition-language-6755bcb9ce51) (SDL)
 
-```gql
+```graphql
 type Person {
   name: String!
   age: Int!
@@ -55,7 +55,7 @@ We use a similar syntax to retrieve the exact data we want
 
 Returns data in the following structure
 
-```gql
+```json
 "data": {
     "allPersons": [
         {
@@ -71,7 +71,7 @@ Returns data in the following structure
 
 Even though we have other fields for the `Person` data type we don't get them back because we didn't ask for it.
 
-```gql
+```graphql
 {
   allPersons {
     name
@@ -82,7 +82,7 @@ Even though we have other fields for the `Person` data type we don't get them ba
 
 Example response
 
-```gql
+```json
 "data": {
     "allPersons": [
         {
@@ -99,9 +99,9 @@ Example response
 
 ### Altering data
 
-In rest we have the idea of CRUD operations where every resource normally has CRUD operations associated with them. So for the `Person` resource it would have a create enpoint, read endpoint, update endpoint, delete endpoint. In GraphQL we have mutations to alter data.
+In rest we have the idea of CRUD operations where every resource normally has CRUD operations associated with them. So for the `Person` resource it would have a create endpoint, read endpoint, update endpoint, delete endpoint. In GraphQL we have mutations to alter data.
 
-```js{2,4}
+```graphql
 mutation {
     createPerson(name: 'Bob', age: 10) {
         name
@@ -112,7 +112,7 @@ mutation {
 
 returns
 
-```
+```json
 {
     "data": {
         "createPerson": {
@@ -133,7 +133,7 @@ The biggest question now would be how is the data actually being retrieved. Reme
 
 When we send a query like this
 
-```js
+```graphql
 {
     author(id: 'abc') {
         posts {
@@ -146,7 +146,7 @@ When we send a query like this
 
 we can imagine that each field i.e. `author`, `name`, `age` has a datatype associated with it. Now if we could return data for each field then that would satisfy the query right? Because we would get all our data that we want back. So in essence the query is asking for this.
 
-```js
+```graphql
 {
     author(id: 'abc'): Author {
         posts: [Post] {
