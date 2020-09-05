@@ -13,7 +13,7 @@
     "lint": "yarn lint:js && yarn lint:style"
   },
   "dependencies": {
-    "@nuxt/content": "1.7.1",
+    "@nuxt/content": "1.8.1",
     "@nuxtjs/color-mode": "1.0.3",
     "@nuxtjs/tailwindcss": "3.0.2",
     "@trevoreyre/autocomplete-vue": "2.2.0",
