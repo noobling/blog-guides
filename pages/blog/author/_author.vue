@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <div class="bg-primary border-b border-secondary">
       <div class="sm:container sm:mx-auto px-4 pt-5 pb-24">
         <NuxtLink
@@ -86,7 +86,7 @@
         </li>
       </ul>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
