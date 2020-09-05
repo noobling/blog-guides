@@ -64,7 +64,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .grid {
   grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
   @apply grid gap-16;
