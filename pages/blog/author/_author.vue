@@ -23,7 +23,7 @@
           :alt="articles[0].author.name"
           class="h-full w-full object-cover"
         />
-        <span v-else> DY </span>
+        <span v-else class="uppercase"> {{ initials }} </span>
       </div>
       <div class="ml-4">
         {{ articles[0].author.name }}
@@ -103,6 +103,14 @@ export default {
       .fetch()
     return {
       articles
+    }
+  },
+  computed: {
+    initials() {
+      const names = this.articles[0].author.name.split(' ')
+      return names.length > 2
+        ? `${names[0].charAt(0)}${names[names.length - 1].charAt(0)}`
+        : names[0].charAt(0)
     }
   },
   methods: {
