@@ -12,7 +12,8 @@
           loading="lazy"
           :src="article.img"
           :alt="article.alt || 'Article header image'"
-          class="h-48 w-full object-cover"
+          class="h-48 w-full object-cover cursor-pointer"
+          @click="navigateToBlog(article)"
         />
         <div class="p-5 flex flex-col justify-between h-full w-full">
           <div
@@ -26,7 +27,10 @@
               {{ tag }}
             </span>
           </div>
-          <h2 class="font-bold font-mono text-xl mb-2">
+          <h2
+            class="font-bold font-mono text-xl mb-2 cursor-pointer"
+            @click="navigateToBlog(article)"
+          >
             {{ article.title }}
           </h2>
           <p class="text-sm mb-2">by {{ article.author.name }}</p>
@@ -34,17 +38,15 @@
             {{ article.description }}
           </p>
           <div>
-            <button
-              class="transition duration-150 border border-primary dark:border-secondary bg-primary dark:bg-transparent dark-hover:bg-secondary dark-hover:text-black text-white px-3 py-2"
-              @click="
-                $router.push({
-                  name: 'blog-slug',
-                  params: { slug: article.slug }
-                })
-              "
+            <nuxt-link
+              class="transition duration-150 border border-primary dark:border-secondary bg-primary dark:bg-transparent dark-hover:bg-secondary dark-hover:text-black hover:bg-dark text-white px-3 py-2"
+              :to="{
+                name: 'blog-slug',
+                params: { slug: article.slug }
+              }"
             >
               Read more
-            </button>
+            </nuxt-link>
           </div>
         </div>
       </li>
@@ -60,6 +62,14 @@ export default {
       .sortBy('createdAt', 'desc')
       .fetch()
     return { articles }
+  },
+  methods: {
+    navigateToBlog(article) {
+      this.$router.push({
+        name: 'blog-slug',
+        params: { slug: article.slug }
+      })
+    }
   }
 }
 </script>
