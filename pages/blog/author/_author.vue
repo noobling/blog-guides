@@ -1,63 +1,88 @@
 <template>
-  <div
-    class="flex lg:h-screen w-screen lg:overflow-hidden xs:flex-col lg:flex-row"
-  >
-    <div class="relative lg:w-1/2 xs:w-full xs:h-84 lg:h-full post-left">
-      <img
-        loading="lazy"
-        :src="articles[0].author.img"
-        :alt="articles[0].author.name"
-        class="absolute h-full w-full object-cover"
-      />
-    </div>
-
-    <div class="overlay"></div>
-    <div class="absolute top-32 left-32 text-white">
-      <NuxtLink to="/"><Logo /></NuxtLink>
-      <div class="mt-16 -mb-3 flex flex-col uppercase text-sm">
-        <h1 class="text-4xl">
-          {{ articles[0].author.name }}
-        </h1>
-        <p class="mb-4">{{ articles[0].author.bio }}</p>
+  <div>
+    <div class="bg-primary border-b border-secondary">
+      <div class="sm:container sm:mx-auto px-4 pt-5 pb-24">
+        <NuxtLink
+          to="/"
+          class="p-1 text-secondary flex items-center border border-transparent transition duration-200 hover:border-secondary"
+          style="width: max-content"
+        >
+          <i class="material-icons-sharp">arrow_back</i>
+          <span class="font-bold"> Back to All Articles </span>
+        </NuxtLink>
       </div>
     </div>
-    <div
-      class="relative xs:py-8 xs:px-8 lg:py-32 lg:px-16 lg:w-1/2 xs:w-full h-full overflow-y-scroll markdown-body post-right custom-scroll"
-    >
-      <NuxtLink to="/"
-        ><p class="hover:underline">Back to All Articles</p></NuxtLink
+    <div class="flex items-center sm:container sm:mx-auto px-4">
+      <div
+        class="flex items-center justify-center border border-secondary bg-primary text-7xl text-secondary font-mono w-32 h-32 -mt-16"
       >
-      <h3 class="mb-4 font-bold text-4xl">
-        Here are a list of articles by {{ articles[0].author.name }}:
-      </h3>
-      <ul>
-        <li
-          v-for="article in articles"
-          :key="article.slug"
-          class="w-full px-2 xs:mb-6 md:mb-12 article-card"
-        >
-          <NuxtLink
-            :to="{ name: 'blog-slug', params: { slug: article.slug } }"
-            class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
-          >
-            <img
-              v-if="article.img"
-              loading="lazy"
-              :src="article.img"
-              :alt="article.alt"
-              class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
-            />
+        <img
+          v-if="articles[0].author.img"
+          loading="lazy"
+          :src="articles[0].author.img"
+          :alt="articles[0].author.name"
+          class="h-full w-full object-cover"
+        />
+        <span v-else> DY </span>
+      </div>
+      <div class="ml-4">
+        {{ articles[0].author.name }}
+      </div>
+    </div>
+    <p class="sm:container sm:mx-auto px-4 mt-4">
+      {{ articles[0].author.bio }}
+    </p>
 
+    <div class="sm:container sm:mx-auto px-4 mb-8 mt-8 md:mt-16">
+      <h1 class="mb-4 font-bold text-2xl">
+        Articles by {{ articles[0].author.name }}:
+      </h1>
+      <ul class="grid">
+        <li
+          v-for="article of articles"
+          :key="article.slug"
+          class="transition-all duration-500 w-full flex flex-col bg-light dark:bg-dark"
+        >
+          <img
+            v-if="article.img"
+            loading="lazy"
+            :src="article.img"
+            :alt="article.alt || 'Article header image'"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-5 flex flex-col justify-between h-full w-full">
             <div
-              class="p-6 flex flex-col justify-between xxlmin:w-1/2 xxlmax:w-full"
+              class="mb-2 flex flex-wrap items-center space-x-2 font-light text-xs text-muted"
             >
-              <h2 class="font-bold">{{ article.title }}</h2>
-              <p>{{ article.description }}</p>
-              <p class="font-bold text-gray-600 text-sm">
-                {{ formatDate(article.updatedAt) }}
-              </p>
+              <span
+                v-for="tag in article.tags || []"
+                :key="tag"
+                class="border-1/2 border-muted border-opacity-25 px-1"
+              >
+                {{ tag }}
+              </span>
             </div>
-          </NuxtLink>
+            <h2 class="font-bold font-mono text-xl mb-2">
+              {{ article.title }}
+            </h2>
+            <p class="text-sm mb-2">by {{ article.author.name }}</p>
+            <p class="font-bold text-muted text-sm mb-4">
+              {{ article.description }}
+            </p>
+            <div>
+              <button
+                class="transition duration-150 border border-primary dark:border-secondary bg-primary dark:bg-transparent dark-hover:bg-secondary dark-hover:text-black text-white px-3 py-2"
+                @click="
+                  $router.push({
+                    name: 'blog-slug',
+                    params: { slug: article.slug }
+                  })
+                "
+              >
+                Read more
+              </button>
+            </div>
+          </div>
         </li>
       </ul>
     </div>

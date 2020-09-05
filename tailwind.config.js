@@ -31,12 +31,25 @@ module.exports = {
         'monospace'
       ]
     },
+    fontSize: {
+      xs: '.75rem',
+      sm: '.875rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '4rem',
+      '7xl': '5rem'
+    },
     borderWidth: {
       default: '1px',
-      '0': 0,
+      0: 0,
       '1/2': '0.5px',
-      '2': '2px',
-      '4': '4px'
+      2: '2px',
+      4: '4px'
     },
     extend: {
       colors: {
@@ -51,12 +64,12 @@ module.exports = {
         light: '#f8f9fa'
       },
       spacing: {
-        '72': '18rem',
-        '96': '24rem',
-        '128': '32rem'
+        72: '18rem',
+        96: '24rem',
+        128: '32rem'
       },
       height: {
-        '84': '22rem'
+        84: '22rem'
       },
       width: {
         '3/2': '150%',
@@ -68,10 +81,10 @@ module.exports = {
       }
     },
     inset: {
-      '0': 0,
-      '16': '16px',
-      '32': '32px',
-      '64': '64px',
+      0: 0,
+      16: '16px',
+      32: '32px',
+      64: '64px',
       '2rem': '2rem',
       '3rem': '3rem'
     }
