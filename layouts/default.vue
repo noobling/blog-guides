@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <Nuxt />
+    <Nuxt class="main-content" />
     <Footer />
   </div>
 </template>
@@ -40,6 +40,10 @@ html {
 }
 .light-mode {
   @apply text-black bg-secondary;
+}
+
+.main-content {
+  min-height: calc(100vh - 64px - 80px);
 }
 
 .search-articles {
