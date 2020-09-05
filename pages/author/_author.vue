@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="bg-primary border-b border-secondary">
-      <div class="sm:container sm:mx-auto px-4 pt-5 pb-24">
+      <div class="sm:container sm:mx-auto px-4 pt-5 pb-24 md:pb-32">
         <NuxtLink
           to="/"
           class="p-1 text-secondary flex items-center border border-transparent transition duration-200 hover:border-secondary"
@@ -14,7 +14,7 @@
     </div>
     <div class="flex items-center sm:container sm:mx-auto px-4">
       <div
-        class="flex items-center justify-center border border-secondary bg-primary text-7xl text-secondary font-mono w-32 h-32 -mt-16"
+        class="flex items-center justify-center border border-secondary bg-primary text-7xl text-secondary font-mono w-32 h-32 md:w-40 md:h-40 -mt-16 md:-mt-20"
       >
         <img
           v-if="articles[0].author.img"

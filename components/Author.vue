@@ -1,7 +1,7 @@
 <template>
   <div class="w-full xs:mb-6 md:mb-12 article-card">
     <NuxtLink
-      :to="`/blog/author/${author.name}`"
+      :to="`/author/${author.name}`"
       class="flex flex-col dark:bg-black-dark"
     >
       <img
