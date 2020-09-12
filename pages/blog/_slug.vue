@@ -16,7 +16,12 @@
           {{ article.title }}
         </h1>
         <span class="md:hidden">
-          <p class="mb-0">by {{ article.author.name }}</p>
+          <p class="mb-0">
+            by
+            <NuxtLink :to="`/author/${article.author.name}`">
+              {{ article.author.name }}
+            </NuxtLink>
+          </p>
           <p class="mb-4">
             <small>Last Updated: {{ formatDate(article.updatedAt) }}</small>
           </p>
