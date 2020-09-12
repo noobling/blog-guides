@@ -33,7 +33,12 @@
           >
             {{ article.title }}
           </h2>
-          <p class="text-sm mb-2">by {{ article.author.name }}</p>
+          <NuxtLink
+            :to="`/author/${article.author.name}`"
+            class="text-sm mb-2 hover:underline"
+          >
+            by {{ article.author.name }}
+          </NuxtLink>
           <p class="font-bold text-muted text-sm mb-4">
             {{ article.description }}
           </p>
