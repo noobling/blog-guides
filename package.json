@@ -17,7 +17,7 @@
     "@nuxtjs/color-mode": "1.0.3",
     "@nuxtjs/tailwindcss": "3.0.2",
     "@trevoreyre/autocomplete-vue": "2.2.0",
-    "nuxt": "2.14.4",
+    "nuxt": "2.14.5",
     "prism-themes": "1.4.0",
     "tailwindcss-dark-mode": "1.1.6"
   },
