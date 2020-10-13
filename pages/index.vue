@@ -17,12 +17,12 @@
         />
         <div class="p-5 flex flex-col justify-between h-full w-full">
           <div
-            class="mb-2 flex flex-wrap items-center space-x-2 font-light text-xs text-muted"
+            class="mb-2 flex flex-wrap items-center space-x-2 font-light text-xs opacity-50"
           >
             <span
               v-for="tag in article.tags || []"
               :key="tag"
-              class="border-1/2 border-muted border-opacity-25 px-1"
+              class="border-1/2 border-muted px-1"
             >
               {{ tag }}
             </span>
@@ -64,7 +64,7 @@ export default {
   async asyncData({ $content, params }) {
     const articles = await $content('articles', params.slug)
       .only(['title', 'description', 'img', 'alt', 'slug', 'tags', 'author'])
-      .sortBy('createdAt', 'desc')
+      .sortBy('updatedAt', 'desc')
       .fetch()
     return { articles }
   },
