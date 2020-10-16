@@ -19,7 +19,7 @@
     "@trevoreyre/autocomplete-vue": "2.2.0",
     "nuxt": "2.14.6",
     "prism-themes": "1.4.0",
-    "tailwindcss-dark-mode": "1.1.6"
+    "tailwindcss-dark-mode": "1.1.7"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "3.1.0",
